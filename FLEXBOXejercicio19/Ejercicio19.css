@@ -1,0 +1,237 @@
+@media(max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 1.8vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: rgb(212, 198, 198);
+    }
+    header{
+        width: 100%;
+        height: 30px;
+        padding: 2%;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: center;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        background-color: rgb(79, 197, 79);
+        color: white;
+    }
+    header h1{
+        font-size: 1.2rem;
+    }
+    header p{
+        font-size: 0.5rem;
+    }
+
+    #principal{
+        width: 100%;
+        height: 250px;
+        margin-top: 10px;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        box-sizing: border-box;
+    }
+    #principal main{
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        padding: 3%;
+
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: white;
+        font-size: 1rem;
+        color: black;
+    }
+    #principal main h2{
+        font-size: 1.5rem;
+    }
+    #principal main p{
+        font-size: 1.2rem;
+    }
+    #principal aside{
+        width: 100%;
+        height: 20%;
+        margin: 0;
+        padding: 3%;
+
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: rgb(128, 119, 119);
+        color: rgb(135, 135, 204);
+    }
+    #principal aside h3{
+        font-size: 1.5rem;
+    }
+    #principal aside p{
+        font-size: 1.2rem;
+    }
+
+    #seccion1{
+        width: 100%;
+        height: 300px;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    #seccion1 .columna{
+        width: 40%;
+        height: 29%;
+        margin: 2%;
+        padding: 2%;
+
+        background-color: rgb(85, 163, 236);
+        color: white;
+    }
+
+    footer{
+        width: 100%;
+        height: 30px;
+        margin: 0;
+        padding: 2%;
+
+        background-color: rgb(47, 42, 42);
+        color: white;
+    }
+    footer h4{
+        font-size: 1.5rem;
+    }
+}
+/* -----------------ESTILO  PC-----------------*/
+@media (min-width:601px){ 
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 1.8vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: rgb(212, 198, 198);
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        padding: 1%;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        background-color: rgb(79, 197, 79);
+        color: white;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header p{
+        font-size: 1rem;
+    }
+
+    #principal{
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    #principal main{
+        width: 70%;
+        height: 100%;
+        margin: 0;
+        padding: 3%;
+
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: white;
+        font-size: 1rem;
+        color: black;
+    }
+    #principal main h2{
+        font-size: 1.5rem;
+    }
+    #principal main p{
+        font-size: 1.2rem;
+    }
+    #principal aside{
+        width: 30%;
+        height: 50%;
+        margin: 0;
+        padding: 3%;
+
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: rgb(128, 119, 119);
+        color: rgb(135, 135, 204);
+    }
+    #principal aside h3{
+        font-size: 1.5rem;
+    }
+    #principal aside p{
+        font-size: 1.2rem;
+    }
+
+    #seccion1{
+        width: 100%;
+        height: 300px;
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    #seccion1 .columna{
+        width: 20%;
+        height: 29%;
+        margin: 0;
+        padding: 2%;
+
+        background-color: rgb(85, 163, 236);
+        color: white;
+    }
+
+    footer{
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        padding: 2%;
+
+        background-color: rgb(47, 42, 42);
+        color: white;
+    }
+    footer h4{
+        font-size: 2rem;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }

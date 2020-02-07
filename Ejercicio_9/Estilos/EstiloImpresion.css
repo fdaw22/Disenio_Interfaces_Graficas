@@ -1,0 +1,154 @@
+body{
+    background: white;
+    background-image: none;
+    color: black;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 20pt;
+}
+
+a{
+    text-decoration: underline;
+}
+
+a::after{
+    content: "(" attr(href)")";
+}
+
+.imgblog{
+    display: none;
+}
+
+.imagen{
+    display: none;
+}
+
+.navegador1{
+    display: none;
+} 
+
+body header{
+    
+    height: 200pt;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+header p{
+    color: black;
+}
+
+.parrafos{
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.s1{
+    height: 200pt;
+}
+
+nav{
+    display: none;
+}
+
+.articulo a{
+    display: none;
+}
+.navegador1 a{
+    display: none;
+}
+
+.boton2 a{
+    display: none;
+    margin: 0;
+}
+
+main{
+    height: 10pt;
+    margin: 0;
+}
+
+.boton2{
+    height: 2pt;
+}
+.s2{
+    height: 100pt;
+}
+.s2 a{
+    display: none;
+}
+
+.s2 .texto h5, .s2 .texto p{
+    color: black;
+}
+
+.s3{
+    height: 100pt;
+}
+
+.blog{
+    height: 100pt;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+}
+.textblog{
+    height: 100pt;
+}
+.imgblog{
+    height: 100pt;
+}
+.testimoniales{
+    height: 100pt;
+}
+
+.articulo1{
+    height: 50pt;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+@page{
+    margin: 2cm;
+}
+
+.boton2{
+    page-break-before: always;
+}
+
+
+
+

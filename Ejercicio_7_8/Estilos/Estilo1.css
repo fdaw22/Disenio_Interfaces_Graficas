@@ -1,0 +1,108 @@
+html body{
+    width: 99%;
+    height: 100%;
+}
+
+header{
+    width: 95%;
+    height: 22%;
+    margin: 1%;
+    border-bottom: solid 3px red;
+}
+
+header img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 1%;
+}
+
+header .titulos{
+    float: right;
+    margin-right: 43%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+main{
+    width: 95%;
+    height: 115%;
+    margin: 1%;
+    border-bottom: solid 3px red;
+    padding: 0%;
+}
+
+main nav{
+    float: left;
+    width: 38%;
+    height: 39%;
+    margin: 1%;
+    margin-right: 1%;
+    margin-bottom: 0%;
+    padding: 1%;
+}
+
+main aside{
+    float: right;
+    width: 50%;
+    height: 65%;
+    margin: 1%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    background-color: crimson;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+main section{
+    float: left;
+    width: 40%;
+    height: 40%;
+    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 2%;
+}
+
+footer{
+    width: 95%;
+    height: 20%;
+}
+
+footer address{
+    float: right;
+    margin: 2%;
+    margin-right: 5%;
+    margin-top: 4%;
+}
+
+h1, h2{
+    font-family: "Mario";
+    font-size: 30px;
+    color: #f41f0f;
+}
+
+h3, h4, h5{
+    font-family: "Mario";
+    font-size: 18px;
+}
+
+p, li, address{
+    font-family: "Maquina";
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(241, 143, 63);
+}
+
+@font-face{
+    font-family: "Mario";
+    src: url(../Fuentes/SuperMario256.ttf);
+}
+
+@font-face{
+    font-family: "Maquina";
+    src: url(../Fuentes/NixieOne.ttf)
+}

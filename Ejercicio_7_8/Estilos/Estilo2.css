@@ -1,0 +1,29 @@
+div, .cuerpo{
+    
+    background-image: linear-gradient(to right bottom, lightskyblue, lightcoral);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.cuerpo aside{
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+footer{
+    width: 95%;
+    height: 20%;
+}
+
+aside p{
+    color: white;
+}
+
+main aside:hover{
+    background-color: rgb(28, 21, 70);
+    color: crimson;
+}
+
+.cuerpo h1, h2, h3, h4, h5{
+    text-shadow: 3px 3px gray;
+}
+

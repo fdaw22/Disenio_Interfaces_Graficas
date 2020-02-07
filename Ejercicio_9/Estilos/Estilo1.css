@@ -1,0 +1,534 @@
+html{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-size: 62.5%; 
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    background-image: url(../Imagenes/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    font-size: 1.7vw;
+    font-family: 'Lobster', cursive;
+}
+header .empresa{
+    width: 50%;
+    height: 25%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+header .empresa img{
+    width: 30%;
+    height: 100%;
+}
+header .navegador1{
+    width: 50%;
+    height: 25%;
+    padding: 1%;
+    
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+header .navegador1 ul{
+    width: 100%;
+    height: 20%;
+}
+header .navegador1 ul li{
+    display: inline;
+    margin: 1%;
+}
+header .navegador1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+header .presentacion{
+    width: 50%;
+    height: 20%;
+    padding: 0.5%;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+
+    color: white;   
+}
+header .presentacion .parrafos{
+    width: 40%;
+    height: 100%;
+    margin: 1%;
+
+}
+
+/*Final de cabecera*/
+
+h2{
+    width: 21%;
+    height: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.s1{
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    padding: 1%;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.s1 .caracteristicas{
+    width: 50%;
+    height: 80%;
+    margin: 1%;
+    padding: 1%;
+    font-size: 1.5vw;
+    text-align: center;
+    box-sizing: border-box;
+}
+.s1 .caracteristicas img{
+    width: 20%;
+    height: 20%;
+}
+.s1 .caracteristicas h3{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5vw;
+}
+.s1 .caracteristicas p{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1vw;
+}
+
+/*Fin de la seccion 1*/
+main{
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 1%;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+main .articulo{
+    width: 20%;
+    height: 96%;
+    min-height: 50px;
+    margin: 0.5%;
+    padding-bottom: 2%;
+    background-image: linear-gradient(to bottom right,black, white);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+main .articulo img{
+    width: 100%;
+    height: 40%;
+}
+main .articulo .informacion{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 3%;
+    padding: 4%;
+    text-align: justify;
+    font-size: 1.2vw;
+    font-family: 'Heebo', sans-serif;
+    box-sizing: border-box;
+}
+main .articulo .informacion em{
+    color: rgb(82, 126, 82);
+}
+main .articulo .informacion del em{
+    color: rgb(184, 75, 75);
+}
+main .boton1{
+    width: 70%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    background-color: orangered;
+    border-radius: 5px;
+    border: black 2px solid;
+}
+main a{
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    font-size: 1vw;
+}
+
+ /*Final de la seccion principal*/
+
+.boton2{
+    width: 100%;
+    height: 13vh;
+    padding: 2%;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+.boton2 a{
+    width: 10%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+
+    box-sizing: border-box;
+}
+.boton2 a .todos{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: green;
+    border-radius: 5px;
+
+    font-family: 'Heebo', sans-serif;
+    font-size: 1vw;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    
+}
+
+/*Final seccion de boton*/
+
+.s2{
+    width: 100%;
+    height: 60vh;
+    padding-left: 7%;
+    background-image: url(../Imagenes/Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.s2 .texto h5{
+    font-family: 'Lobster', cursive;
+    font-size: 2.2vw;
+    color: white;
+}
+.s2 .texto p{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2vw;
+    color: white;
+}
+.s2 a{
+    width: 12%;
+    height: 10%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    
+}
+.s2 a .boton3{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: orangered;
+    border-radius: 5px;
+
+    font-family: 'Heebo', sans-serif;
+    font-size: 1vw;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+/*Final de la seccion 2*/
+
+.s3{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    font-family: 'Heebo', sans-serif;
+    
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+.s3 .blog{
+    width: 50%;
+    height: 100vh;
+    margin: 1%;
+    font-size: 1vw;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+.s3 .blog h6{
+    font-family: 'Lobster', cursive;
+    font-size: 2vw;
+}
+.s3 .articulo1{
+    width: 100%;
+    height: 100%;
+
+    padding: 1%;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.s3 .blog  img{
+    width: 70%;
+    height: 100%;
+    border-radius: 7px;
+}
+.s3  .imgblog{
+    width:90%;
+    height: 80%;
+}
+.s3 .textblog{
+    width:100%;
+    height: 50%;
+    padding: 1%;
+    box-sizing: border-box;
+    text-align: justify;
+}
+.s3 .textblog h3::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 5px;
+    background-color: orangered;
+}
+.s3 .textblog p em{
+    color: rgb(44, 139, 44);
+}
+.s3 .testimoniales{
+    width: 50%;
+    height: 100%;
+    margin: 1%;
+    padding-top: 0.4%;
+    padding-bottom: 7%;
+    font-size: 1vw;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+.s3 .testimoniales h6{
+    font-family: 'Lobster', cursive;
+    font-size: 2vw;
+}
+.s3 .testimoniales .testi{
+    width: 70%;
+    height: 60%;
+    padding: 8%;
+    background-color:green; 
+
+    border-radius: 5px;
+    font-size: 1.5vw;
+    color: white;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/*Final de la seccion 3*/
+
+footer{
+    width: 100%;
+    height: 40hw;
+    padding: 1.1%;
+    background-color: rgb(49, 47, 47);
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1vw;
+    color: white;
+}
+footer nav{
+    width: 50%;
+    height: 50%;
+    font-family: 'Lobster', cursive;
+}
+footer nav ul li{
+    display: inline;
+    margin: 1%;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer address{
+    font-family: 'Heebo', sans-serif;
+}
+
+/*/*Pseudoclases enlaces*/
+
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color:blue;
+}
+a:active{
+    color: grey;
+}
+
+/*Cambiar la primera letra de cada parrafo
+
+p::first-letter{
+    font-size: 2.5vh;
+    color: tomato;
+}
+
+Añadir comillas antes del parrafo
+
+.testimoniales .testi p::before{
+    content: "\“";
+    display: inline;
+    font-size: 5vh;
+}
+
+Cambiar el estilo del texto seleccionado por el propio usuario
+
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, br::selection{
+    color: yellow;
+    background-color: purple;
+}
+*/
+
+

@@ -1,0 +1,29 @@
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: linear-gradient(to right, yellow, purple);*/
+}
+
+table{
+    width: 40%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 2px solid;
+    border-collapse: collapse;
+}
+
+table caption{
+    background-color: black;
+    color: white;
+}
+
+table tbody th{
+    background-color: gray;
+    text-align: left;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #bcb7b7;
+}

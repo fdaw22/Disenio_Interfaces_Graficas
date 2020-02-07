@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--meta:viewport para poder hacer la pagina responsive a dispositivos, sino media query no funciona-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio16</title>
+    <link rel="stylesheet" href="Estilos/Ejercicio16.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--Menu o hamburguesa desplegable-->
+        <div class="menu_bar">
+            <a href="#" class="btn-menu"><span class="icon-menu"></span> Menu</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><span class="icon-pencil2"></span>Inicio</a></li>
+                <li><a href="#"><span class="icon-lifebuoy"></span>Trabajos</a></li>
+                <li><a href="#"><span class="icon-phone"></span>Proyectos</a></li>
+                <li><a href="#"><span class="icon-aid-kit"></span>Servicios</a></li>
+                <li><a href="#"><span class="icon-rocket"></span>Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="formulario">
+        <div id="cajatitulo">
+            <h3>Reserva alojamiento con nosotros</h3>
+            <form action="#" method="GET">
+                <label for="lugar">DONDE</label>
+                <input id="lugar" name="lugar" class="intro" type="text" placeholder="Donde">
+                <label for="llegada">LLEGADA</label>
+                <input id="llegada" name="llegada" class="intro" type="date" placeholder="dd/mm/aaaa">
+                <label for="salida">SALIDA</label>
+                <input id="salida" name="salida" class="intro" type="date" placeholder="dd/mm/aaaa">
+                <label for="huespes">HUESPEDES</label>
+                <select name="huesped" id="huesped">
+                    <option value="1" selected>Uno</option>
+                    <option value="2" selected>Dos</option>
+                    <option value="3" selected>Tres</option>
+                </select>
+                <input type="submit" value="Buscar" id="envio">
+            </form>
+        </div>
+    </section>
+    <section id="imagenes">
+        <div class="imagenes"><img src="Imagenes/img1.jpg" alt=""><p>Viajes</p></div>
+        <div class="imagenes"><img src="Imagenes/img2.jpg" alt=""><p>Experiencias</p></div>
+        <div class="imagenes"><img src="Imagenes/img3.jpg" alt=""><p>Aventuras</p></div>
+        <div class="imagenes"><img src="Imagenes/img4.jpg" alt=""><p>Diversion</p></div>
+    </section>
+    <section id="naturaleza">
+        <p>PRESENTAMOS</p>
+        <h1>Animales</h1>
+        <p>en las experiencias en Airbnb</p>
+        <button id="mas">Mas informacion</button>
+    </section>
+    <section id="aventuras">
+        <div class="ventanas"><img src="Imagenes/ventana1.jpg" alt=""><p>Actividad</p><h2>Precio: 20&euro;</h2></div>
+        <div class="ventanas"><img src="Imagenes/ventana2.jpg" alt=""><p>Actividad</p><h2>Precio: 20&euro;</h2></div>
+        <div class="ventanas"><img src="Imagenes/ventana3.jpg" alt=""><p>Actividad</p><h2>Precio: 20&euro;</h2></div>
+        <div class="ventanas"><img src="Imagenes/ventana4.jpg" alt=""><p>Actividad</p><h2>Precio: 20&euro;</h2></div>
+        <div class="ventanas"><img src="Imagenes/ventana5.jpg" alt=""><p>Actividad</p><h2>Precio: 20&euro;</h2></div>
+        <button>Mas informacion aventuras</button>
+    </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="Scripts/Ejercicio16.js"></script>
+</body>
+</html>

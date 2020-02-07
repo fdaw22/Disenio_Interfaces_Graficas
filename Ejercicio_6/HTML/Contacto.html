@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/Normalize.css">
+    <link rel="stylesheet" type="text/css" href="../Estilos/Estilo2.css">
+    <link rel="icon" type="image/png" href="../Imagenes/GTS .ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="he1" class="he1">
+            <a href="../HTML/Index.html"><img src="../Imagenes/GTS.png" alt="Logotipo de GTS"></a>
+        </div>
+    <div id="he2" class="he2">
+        <ul>
+            <li><a href="../HTML/Index.html">Nosotros</a></li>
+            <li><a href="#">Anuncios</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="../HTML/Contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <section id="t1" class="t1">
+        <h1>Contacto</h1>
+    </section>
+
+    <section id="s1" class="s1">
+        <img src="../Imagenes/Nissan200sx.jpg" alt="Imagen de una carretera">
+    </section>
+
+    <section id="t2" class="t2">
+        <h1>Llena el Formulario de Contacto</h1>
+    </section>
+
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Informacion Personal</legend><br>
+                <label>Nombre:</label>
+                <input class="i1" type="text" id="nombre" placeholder="Tu nombre" minlength="3" maxlength="15" required pattern="[A-ZÁÉÍÓÚÜ][a-záéíóúü]+"><br><br>
+                <label>E-mail:</label> 
+                <input class="i1" type="email" id="email" placeholder="Tu email" required ><br><br>
+                <label>Teléfono:</label> 
+                <input class="i1" type="tel" id="telefono" placeholder="Tu teléfono" required pattern="[0-9]+{4,8}"><br><br>
+                <label>Mensaje:</label> 
+                <textarea class="i1"  id="mensaje" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+               <legend>Informacion sobre Articulo</legend>
+                
+               <label>Vende o Compra:</label>
+               <select class="i1" name="select" id="seleccion">
+                    <option class="opc" id="opc1">--Seleccione--</option>
+                    <option class="opc" id="opc2">Comprar</option>
+                    <option class="opc" id="opc2">Vender</option>
+                </select><br><br>
+                <label>Presupuesto:</label> 
+                <input class="i1" type="number" id="presupuesto" min="10000" max="30000000">
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <label>Como desea ser Contactado:</label> <br><br>
+                <input type="radio" id="contact" name="check" value="tel">&nbsp;Teléfono <br><br>
+                <input type="radio" id="contact" name="check" value="email">&nbsp;Correo <br><br>
+                <label>Si eligio Teléfono, eliga Fecha y Hora</label> 
+                <label>Fecha:</label> 
+                <input class="i1" type="date" id="fecha" required><br><br>
+                <label>Hora:</label> 
+                <input class="i1" type="time" id="hora" required><br><br><br>
+                <input type="submit" id="envio" class="envio">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer> 
+        <nav id="navegador2" class="navegador2">
+            <ul>
+                <li><a href="../HTML/Index.html">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="../HTML/Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <address>Todos Los Derechos Reservados&copy;</address>
+    </footer>
+</body>
+</html>

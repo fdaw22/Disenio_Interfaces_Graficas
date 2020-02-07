@@ -1,0 +1,76 @@
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: linear-gradient(to bottom right, orange, blue);*/
+}
+
+header{
+    width: 100%;
+    height: 20%;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    padding: 0.2%;
+}
+
+main .s1{
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    background-color: #5f91d3; 
+}
+
+main .s1 .encabezado{
+    width: 100%;
+    height: 25%;
+    margin-left: auto;
+    margin-top: auto;
+    border-top: black 3px solid;
+    border-bottom: #8abcfc 3px solid;
+}
+
+main .s1 .encabezado .tiempo{
+    width: 14%;
+    height: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    padding: 0;
+    background-color: #5e8cd6;
+    text-align: center;
+    font-size: 130%;
+    color: white;
+    text-align: center;
+}
+
+main .s1 .encabezado strong{
+    font-size: 140%;
+}
+
+main .s1 .a1{
+    width: 100%;
+    height: 69%;
+    margin-left: auto;
+    margin-top: auto;
+    border-bottom: black 3px solid;
+}
+
+main .s1 .a1 bdi{
+    background-color: aliceblue;
+    color: red;
+}
+
+main .s1 .a1 q{
+    font-size: 140%;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline dashed red;
+}
+
