@@ -3,95 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ejercicio22</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../ICONO/ICONOBOOTSTRAP.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Ejercicio22.css">
+    <script src="Ejercicio22.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="Estilos/Ejercicio22.css">
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row p-1 bg-primary">
-            <div class="col-lg-1 col-md-1 offset-lg-1 offset-md-1 d-none d-md-block">
-                <a href=""><img class="h-100" src="IconosBOODSTRAP/bucket.svg" alt="bucket"></a>
+    <div class="container-fluid">
+        <div class="row bg-primary">
+            <div class="col-1 d-none d-md-block offset-1">
+                <img class="my-3" src="../IconosBOODSTRAP/shield.svg" width="40" height="40" alt="">
             </div>
-            <div class="input-group col-lg-4 col-md-4 col-12 order-2 order-md-1">
-                <input class="w-75 border border-light rounded-left" type="text" placeholder="Amigos, Lugares y cosas que te gustan">
-                <div class="input-group-append">
-                    <button class="btn btn-light"><img  src="IconosBOODSTRAP/search.svg" alt=""></button>
+            <div class="col-md-6 col-12 order-2 order-md-1">
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <img class="input-group-text" id="basic-addon2" src="../IconosBOODSTRAP/search.svg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-3 col-12 offset-lg-2 offset-lg-1 d-flex justify-content-around align-items-center order-1 order-md-2">
-                <a href="#"><img class="h-100" src="IconosBOODSTRAP/sun.svg" alt="sun"></a>
-                <a href="#"><img class="h-100" src="IconosBOODSTRAP/lock.svg" alt="lock"></a>
-                <a href="#"><img class="h-100" src="IconosBOODSTRAP/camera-video.svg" alt="camera"></a>
-                <a href="#"><img class="rounded-circle" src="Imagenes/usuario.jpg" alt="" width="35px" height="35px"></a>
-            </div>
+                <div class="col-md-3 col-12 order-1  order-md-2 offset-lg-1 my-3">
+                    <div class="row justify-content-around align-items center">
+                        <div class="col-2">
+                            <img src="../IconosBOODSTRAP/filter.svg" alt="" width="30" height="30">
+                        </div>
+                        <div class="col-2">
+                            <img src="../IconosBOODSTRAP/dash.svg" alt="" width="30" height="30">
+                        </div>
+                        <div class="col-2">
+                            <img src="../IconosBOODSTRAP/shield.svg" alt="" width="30" height="30">
+                        </div>
+                        <div class="col-2">
+                            <img src="../ICONO/i5.jpg" alt="" width="30" height="30" class="rounded-circle">
+                        </div>
+                    </div>
+                </div>
         </div>
-    </header>
-    <main class="container-fluid">
-        <div class="row">
-                <nav class="col-lg-2 col-md-4 d-none d-md-block p-2 ml-5">
-                    <div class="row border-bottom  border-secondary">
-                    <ul>
-                    <li><a href="#" class="text-reset text-decoration-none"><img src="IconosBOODSTRAP/tablet.svg" alt=""> Amigos<img></a></li>
-                    <li><a href="#" class="text-reset text-decoration-none"><img src="IconosBOODSTRAP/pause-fill.svg" alt=""> Mensajes Privados</a></li>
-                    <li><a href="#" class="text-reset text-decoration-none"><img src="IconosBOODSTRAP/volume-mute.svg" alt=""> Paginas</a></li>
-                    <li><a href="#" class="text-reset text-decoration-none"><img src="IconosBOODSTRAP/pencil.svg" alt=""> Fotos</a></li>
-                    <li><a href="#" class="text-reset text-decoration-none"><img src="IconosBOODSTRAP/tablet.svg" alt=""> Musica</a></li>
-                    <li><a href="#" class="text-reset text-decoration-none"><img src="IconosBOODSTRAP/play.svg" alt=""> Videos</a></li>
-                    <li><a href="#" class="text-reset text-decoration-none"><img src="IconosBOODSTRAP/book.svg" alt=""> Libros</a></li>
-                    </ul>
-                    </div>
-                </nav>
 
-
-            <div id="principal" class="col-lg-6 col-md-7 mt-3">
-                <div class="media">
-                    <img src="Imagenes/usuario.jpg" class="mr-3 rounded-circle" alt="..." width="50px" height="50px">
-                    <div class="media-body">
-                      <textarea class="p-2" name="" id="" class="col-12" placeholder="Publicar Mensaje"></textarea>
-                        <div class="container">
-                            <div class="row d-flex flex-row justify-content-between align-items-center border-bottom p-2">
-                        <div class="col-lg-2 d-flex flex-row justify-content-around align-items-center w-25">
-                            <a href=""><img src="IconosBOODSTRAP/bootstrap-reboot.svg" alt=""></a>
-                            <a href=""><img src="IconosBOODSTRAP/box-arrow-bottom-left.svg" alt=""></a>
-                            <a href=""><img src="IconosBOODSTRAP/camera-video.svg" alt=""></a>
-                        </div>
-                        <div class="col-lg-2">
-                        <button class="bg-primary text-light ml-5 border border-primary rounded">Publicar</button>
-                        </div>
-                        </div>
-                    </div>
-                  </div>
+        <div class="row justify-content-center">
+            <div class="menu col-lg-2 col-md-3 d-none d-md-block">
+                <ul>
+                    <li class="py-3 "><img src="../IconosBOODSTRAP/shield.svg" alt=""><span> Apartado</span></li>
+                    <li class="py-3 "><img src="../IconosBOODSTRAP/shield.svg" alt=""><span> Apartado</span></li>
+                    <li class="py-3 "><img src="../IconosBOODSTRAP/shield.svg" alt=""><span> Apartado</span></li>
+                    <li class="py-3 "><img src="../IconosBOODSTRAP/shield.svg" alt=""><span> Apartado</span></li>
+                    <li class="py-3 "><img src="../IconosBOODSTRAP/shield.svg" alt=""><span> Apartado</span></li>
+                    <li class="py-3 border-bottom"><img src="../IconosBOODSTRAP/shield.svg" alt=""><span> Apartado</span></li>
+                </ul>
             </div>
-            <div class="media mt-2 mr-0">
-                <img src="Imagenes/usuario2.jpg" class="mr-3 rounded-circle" alt="..." width="50px" height="50px">
-                
-                <div class="container-fluid">
-                    <div class="row">
-                    <div class="col-lg-12">
-                    <p class="text-primary">Andres Lorem Ipsum</p>
-                    </div>  
+
+<!--            <div class="col-10 d-md-none mx-3 bg-primary mt-3 rounded">
+                <div class="row justify-content-between p-2">
+                    <div class="col-1">
+                        <span class="text-white">Menu</span>
+                    </div>
+                    <div class="col-1">
+                        <button class="bg-primary border-primary boton"><img src="../IconosBOODSTRAP/filter.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+-->
+<nav id="navMovil" class="container-fluid dropup col-10 d-md-none d-block bg-primary mt-3 mb-5 pt-2 pb-2 m-3">
+    <div class="row">
+      <div class="col-11">
+        <h6 class="text-light">Menu</h6>
+      </div>
+      <img src="../IconosBOODSTRAP/reply-all-fill.svg" data-toggle="modal" data-target="#exampleModalLong" height="22" width="22">
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog menu2 col-11" role="document">
+          <div class="modal-content menu2 ">
+            <div class="modal-body text-light bg-dark">
+              <ul>
+                <li class="mb-3 p-3"><img src="../IconosBOODSTRAP/filter.svg" class="mr-2"><a href="#" class="text-light text-decoration-none">Amigos</a></li>
+                <li class="mb-3 p-3"><img src="../IconosBOODSTRAP/filter.svg" class="mr-2"><a href="#" class="text-light text-decoration-none">Mensajes Privados</a></li>
+                <li class="mb-3 p-3"><img src="../IconosBOODSTRAP/filter.svg" class="mr-2"><a href="#" class="text-light text-decoration-none">Páginas</a></li>
+                <li class="mb-3 p-3"><img src="../IconosBOODSTRAP/filter.svg" class="mr-2"><a href="#" class="text-light text-decoration-none">Videos</a></li>
+                <li class="mb-3 p-3"><img src="../IconosBOODSTRAP/filter.svg" class="mr-2"><a href="#" class="text-light text-decoration-none">Fotos</a></li>
+                <li class="mb-3 p-3"><img src="../IconosBOODSTRAP/filter.svg" class="mr-2"><a href="#" class="text-light text-decoration-none">Musica</a></li>
+                <li class="mb-3 p-3"><img src="../IconosBOODSTRAP/filter.svg" class="mr-2"><a href="#" class="text-light text-decoration-none">Libros</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!--Menu desplegable mirar con atencion-->
+            <div class="col-12 col-md-9 col-lg-7 my-3">
+                <div class="media">
+                    <img src="../ICONO/i5.jpg" class="rounded-circle mr-2" width="50" height="50" class="mr-3" alt="...">
+                    <div class="media-body border-bottom pb-3">
+                        <textarea name="" id="" cols="5" rows="10" placeholder="Comentario"></textarea>
+                        <div class="row justify-content-between">
+                            <div class="col-3">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="../IconosBOODSTRAP/eject.svg" alt="">
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="../IconosBOODSTRAP/eject.svg" alt="">
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="../IconosBOODSTRAP/eject.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <button class="bg-primary text-white rounded">Publicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media py-3">
+                    <img src="../ICONO/i5.jpg" class="rounded-circle mr-2" width="50" height="50" class="mr-3" alt="...">
+                    <div class="media-body pb-3">
+                        <h1>Lola Indigo</h1>
+                        <p class="bg-light p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure blanditiis id ducimus sit aliquid in corrupti, nemo odio rerum repellendus sapiente debitis tempore laudantium pariatur aliquam, natus at esse ipsam nostrum, eaque fuga temporibus adipisci expedita quae! Autem, modi fugiat odio molestiae amet nihil temporibus, necessitatibus quam ducimus consectetur iure?</p>
+                        <div class="row justify-content-between">
+                            <div class="col-2">
+                                <button class="bg-primary text-white rounded"><img src="../IconosBOODSTRAP/type-underline.svg" alt=""></button>
+                            </div>
+                            <div class="col-3">
+                                <div class="row justify-content-center">
+                                    <img src="../IconosBOODSTRAP/filter.svg" alt="">
+                                    <samp>15</samp>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media mt-3 border-bottom pb-3">
+                            <a class="mr-3" href="#">
+                              <img src="../ICONO/i5.jpg" class="mr-3 rounded-circle" width="50" height="50" alt="...">
+                            </a>
+                            <div class="media-body">
+                                <textarea name="" id="" cols="4" rows="10"></textarea>
+                            </div>
+                          </div>
+                          <div class="media mt-3 border-bottom pb-3">
+                            <a class="mr-3" href="#">
+                              <img src="../ICONO/i5.jpg" class="mr-3 rounded-circle" width="50" height="50" alt="...">
+                            </a>
+                            <div class="media-body">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor praesentium ducimus qui porro consequatur quia omnis perspiciatis obcaecati suscipit, reiciendis dolore sapiente eum magnam blanditiis soluta? Nostrum vero quis hic.</p>
+                                <p class="text-primary"><a href="">Me gusta</a></p>
+                            </div>
+                          </div>
+                          <div class="media mt-3 border-bottom pb-3">
+                            <a class="mr-3" href="#">
+                              <img src="../ICONO/i5.jpg" class="mr-3 rounded-circle" width="50" height="50" alt="...">
+                            </a>
+                            <div class="media-body">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor praesentium ducimus qui porro consequatur quia omnis perspiciatis obcaecati suscipit, reiciendis dolore sapiente eum magnam blanditiis soluta? Nostrum vero quis hic.</p>
+                                <p class="text-primary"><a href="">Me gusta</a></p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="../ICONO/i5.jpg" class="rounded-circle mr-2" width="50" height="50" class="mr-3" alt="...">
+                    <div class="media-body border-bottom pb-3">
+                        <img src="../ICONO/img1.jpg" alt="" class="imagen border">
+                        <div class="row justify-content-between">
+                            <div class="col-2">
+                                <button class="bg-primary text-white rounded"><img src="../IconosBOODSTRAP/type-underline.svg" alt=""></button>
+                            </div>
+                            <div class="col-3">
+                                <div class="row justify-content-center">
+                                    <img src="../IconosBOODSTRAP/filter.svg" alt="">
+                                    <samp>15</samp>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media mt-3 pb-3">
+                            <a class="mr-3" href="#">
+                              <img src="../ICONO/i5.jpg" class="mr-3 rounded-circle" width="50" height="50" alt="...">
+                            </a>
+                            <div class="media-body">
+                                <textarea name="" id="" cols="4" rows="10"></textarea>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="../ICONO/i5.jpg" class="rounded-circle mr-2" width="50" height="50" class="mr-3" alt="...">
+                    <div class="media-body border-bottom pb-3">
+                        <img src="../ICONO/img1.jpg" alt="" class="imagen border">
+                        <div class="row justify-content-between">
+                            <div class="col-2">
+                                <button class="bg-primary text-white rounded"><img src="../IconosBOODSTRAP/type-underline.svg" alt=""></button>
+                            </div>
+                            <div class="col-3">
+                                <div class="row justify-content-center">
+                                    <img src="../IconosBOODSTRAP/filter.svg" alt="">
+                                    <samp>15</samp>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media mt-3 pb-3">
+                            <a class="mr-3" href="#">
+                              <img src="../ICONO/i5.jpg" class="mr-3 rounded-circle" width="50" height="50" alt="...">
+                            </a>
+                            <div class="media-body">
+                                <textarea name="" id="" cols="4" rows="10"></textarea>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <img src="../ICONO/img3.jpg" alt="">
+                    </div>
+                    <div class="col-12 my-2">
+                        <img src="../ICONO/img3.jpg" alt="">
+                    </div>
+                    <div class="col-12 my-2">
+                        <img src="../ICONO/img3.jpg" alt="">
+                    </div>
                 </div>
                 <div class="row">
-                <div class="bg-light col-lg-12 w-100">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quia nemo, modi hic iusto doloremque tempore animi, totam et, maxime repudiandae? Accusamus temporibus sed et veniam voluptatem reprehenderit ut expedita! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem eum corporis tempore vitae, rem totam ab illum, animi illo repellendus in voluptatibus dolorum saepe esse enim molestiae soluta maxime.
+                    <div class="col-4 text-primary">Publicidad</div>
+                    <div class="col-4 text-primary">Publicidad</div>
+                    <div class="col-4 text-primary">Publicidad</div>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p >Red Social &copy; 2018</p>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
-
-        <aside class="col-lg-3 d-none d-lg-block">
-            <p>hola mundo</p>
-        </aside>
-    </main>
+    </div>
 </body>
 </html>

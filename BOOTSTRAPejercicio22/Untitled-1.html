@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,187 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="Estilos/Ejercicio22.css">
 </head>
-<body>
-    <header class="contianer-fluid">
-        <div class="row">
-            <div class="col-lg-2">
-                <img src="" alt="">
+<body>  
+    <header class="container-fluid bg-primary">
+            <div class="row justify-content-lg-around">
+                <div class="row col-lg-6 col-sm-8 order-2 order-sm-2 px-0 mx-0 justify-content-sm-around ">
+                    <img src="Imagenes/coheteIcono.png" class="mt-3 d-none d-lg-block d-sm-block" alt="" height="40" width="40">
+                    <div class="input-group col-lg-10 col-sm-10 col-12 mb-3 mt-3 ">
+                        <input type="text" class="form-control" placeholder="Amigos, Lugares y cosas que te gustan" aria-label="Amigos, Lugares y cosas que te gustan" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="input-group-text" id="basic-addon2" type="submit"><img src="Imagenes/search.svg" alt="" height="20" width="20"></button>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-lg-3 col-sm-4 col-12 order-1 order-sm-2">
+                <div class="row justify-content-around">
+                  <a href="#"><img src="Imagenes/grupoIconoBlanco.png" class="mt-3" height="40" width="40"></a>
+                  <a href="#"><img src="Imagenes/campanaIcono.png"class="mt-3" height="40" width="40"></a>
+                  <a href="#"><img src="Imagenes/dialogoIcono.png" class="mt-3" height="40" width="40"></a>
+                  <a href="#"><img src="Imagenes/usuario.jpg" class="mt-3 rounded-circle" height="40" width="40"></a>
+                </div>
             </div>
         </div>
     </header>
+
+    <div class="container-fluid col-12 col-lg-12 col-sm-12 mt-3">
+        <div class="row">
+          <!--Navegador para Tablet y PC-->
+          <nav id="navTabletPec" class="container-fluid col-lg-2 col-sm-3 d-none d-sm-block">
+            <div class="row border-bottom border-secondary">
+              <ul>
+                <li class="mb-3"><img src="Imagenes/grupoIconoNegro.png" class="mr-2"><a href="#" class="text-dark text-decoration-none">Amigos</a></li>
+                <li class="mb-3"><img src="Imagenes/pulgarArribaNegro.png" class="mr-2"><a href="#" class="text-dark text-decoration-none">Mensajes Privados</a></li>
+                <li class="mb-3"><img src="Imagenes/pulgarArribaNegro.png" class="mr-2"><a href="#" class="text-dark text-decoration-none">Páginas</a></li>
+                <li class="mb-3"><img src="Imagenes/playNegro.png" class="mr-2"><a href="#" class="text-dark text-decoration-none">Videos</a></li>
+                <li class="mb-3"><img src="Imagenes/fotosNegro.png" class="mr-2"><a href="#" class="text-dark text-decoration-none">Fotos</a></li>
+                <li class="mb-3"><img src="Imagenes/musicaNegro.png" class="mr-2"><a href="#" class="text-dark text-decoration-none">Musica</a></li>
+                <li class="mb-3"><img src="Imagenes/librosNegro.png" class="mr-2"><a href="#" class="text-dark text-decoration-none">Libros</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!--Navagador para movil-->
+          <nav id="navMovil" class="container-fluid dropup col-11 d-sm-none d-block bg-primary mt-3 mb-5 pt-2 pb-2">
+            <div class="row">
+              <div class="col-11">
+                <h6 class="text-light">Menu</h6>
+              </div>
+              <img src="Imagenes/list.svg" data-toggle="modal" data-target="#exampleModalLong" height="22" width="22">
+              <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog menu2 col-11" role="document">
+                  <div class="modal-content menu2 ">
+                    <div class="modal-body text-light bg-dark">
+                      <ul>
+                        <li class="mb-3"><img src="Imagenes/grupoIconoBlanco.png" class="mr-2"><a href="#" class="text-light text-decoration-none">Amigos</a></li>
+                        <li class="mb-3"><img src="Imagenes/mensajesPrivadosBlanco.png" class="mr-2"><a href="#" class="text-light text-decoration-none">Mensajes Privados</a></li>
+                        <li class="mb-3"><img src="Imagenes/mensajesPrivadosBlanco.png" class="mr-2"><a href="#" class="text-light text-decoration-none">Páginas</a></li>
+                        <li class="mb-3"><img src="Imagenes/playBlanco.png" class="mr-2"><a href="#" class="text-light text-decoration-none">Videos</a></li>
+                        <li class="mb-3"><img src="Imagenes/fotosBlanco.png" class="mr-2"><a href="#" class="text-light text-decoration-none">Fotos</a></li>
+                        <li class="mb-3"><img src="Imagenes/musicaBlanco.png" class="mr-2"><a href="#" class="text-light text-decoration-none">Musica</a></li>
+                        <li class="mb-3"><img src="Imagenes/librosBlanco.png" class="mr-2"><a href="#" class="text-light text-decoration-none">Libros</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <main class="container-fluid col-lg-7 col-sm-8 col-12 mb-5">
+            <div class="media">
+              <img src="Imagenes/usuario.jpg" class="mt-3 rounded-circle" height="40" width="40">
+              <div class="media-body ml-sm-3 border-bottom border-secondary">
+                <textarea class="col-lg-12" placeholder="Publicar Mensaje"></textarea>
+                <div class="row justify-content-between">
+                  <div class="mt-3 ">
+                    <a href="#"><img src="Imagenes/fotosNegro.png" class="ml-3" height="22" width="22"></a>
+                    <a href="#"><img src="Imagenes/playNegro.png" class="ml-3" height="22" width="22"></a>
+                    <a href="#"><img src="Imagenes/musicaNegro.png" class="ml-3" height="22" width="22"></a>
+                  </div>
+                  <button type="button" class="btn btn-primary col-11 col-sm-3 col-lg-2 mx-auto mr-sm-3 mt-3 mb-3">Publicar</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="media mt-3">
+              <img src="Imagenes/usuario2.jpg" class="mt-3 rounded-circle" height="40" width="40">
+              <div class="media-body ml-3 border-bottom border-secondary">
+                <h6 class="text-primary mt-3">Andrea Lorem Ipsum</h6>
+                <textarea class="col-lg-12" placeholder="Publicar Mensaje"></textarea>
+                <div class="row justify-content-between">
+                  <button type="button" class="btn btn-primary col-2 col-lg-1 ml-3 mt-3"><img src="Imagenes/pulgarArribaNegro.png"></button>
+                  <div class="mt-4 ">
+                    15<a href="#"><img src="Imagenes/pulgarArribaNegro.png" class="mr-3 ml-2" height="22" width="22"></a>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <img src="Imagenes/usuario.jpg" class="ml-3 mt-3 rounded-circle" height="40" width="40">
+                  <textarea class="col-11 col-lg-10 mt-3 ml-3 mb-3"  placeholder="Publicar Mensaje"></textarea>
+                </div>
+                <div class="media mt-3 border-top border-secondary">
+                  <img src="Imagenes/usuario.jpg" class="mt-3 rounded-circle" height="40" width="40">
+                  <div class="media-body mt-3 ml-3">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi mollitia inventore consequatur enim fuga, illum sequi tempore 
+                      quia suscipit corporis corrupti neque veniam voluptates, dolores id? Exercitationem quo cupiditate magnam!
+                    </p>
+                    <p class="text-primary">Me gusta</p>
+                  </div>
+                </div>
+                <div class="media mt-3 border-top border-secondary">
+                    <img src="Imagenes/usuario2.jpg" class="mt-3 rounded-circle" height="40" width="40">
+                    <div class="media-body mt-3 ml-3">
+                      <p>Incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <p class="text-primary">Me gusta</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+  
+            <div class="media mt-3">
+              <img src="Imagenes/usuario3.jpg" class="mt-3 rounded-circle" height="40" width="40">
+              <div class="media-body ml-3 border-bottom border-secondary">
+                <h6 class="text-primary mt-3">Jose Lorem Ipsum</h6>
+                <div class="col-12 bg-light px-0 pt-3 pb-3">
+                  <img src="Imagenes/usuario4.jpg" class="col-lg-12" height="300">
+                </div>
+                <div class="row justify-content-between">
+                  <button type="button" class="btn btn-primary col-2 col-lg-1 ml-3 mt-3"><img src="Imagenes/pulgarArribaNegro.png"></button>
+                  <div class="mt-4 ">
+                    15<a href="#"><img src="Imagenes/pulgarArribaNegro.png" class="mr-3 ml-2" height="22" width="22"></a>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <img src="Imagenes/usuario.jpg" class="ml-3 mt-3 rounded-circle" height="40" width="40">
+                  <textarea class="col-11 col-lg-10 mt-3 ml-3 mb-3" placeholder="Publicar Mensaje"></textarea>
+                </div>
+              </div>
+            </div>
+  
+            <div class="media mt-3">
+              <img src="Imagenes/usuario.jpg" class="mt-3 rounded-circle" height="40" width="40">
+              <div class="media-body ml-3 border-bottom border-secondary">
+                <h6 class="text-primary mt-3">Alejandro Lorem Ipsum</h6>
+                <div class="col-12 bg-light px-0 pt-3 pb-3">
+                  <img src="Imagenes/usuario4.jpg" class="col-lg-12" height="300">
+                </div>
+                <div class="row justify-content-between">
+                  <button type="button" class="btn btn-primary col-2 col-lg-1 ml-3 mt-3"><img src="Imagenes/pulgarArribaNegro.png"></button>
+                  <div class="mt-4 ">
+                    15<a href="#"><img src="Imagenes/pulgarArribaNegro.png" class="mr-3 ml-2" height="22" width="22"></a>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <img src="Imagenes/usuario.jpg" class="ml-3 mt-3 rounded-circle" height="40" width="40">
+                  <textarea class="col-11 col-lg-10 mt-3 ml-3 mb-3" placeholder="Publicar Mensaje"></textarea>
+                </div>
+              </div>
+            </div>
+          </main>
+  
+          <aside class="container-fluid d-none d-lg-block col-lg-2">
+            <div class="row">
+              <p class="col-lg-12 text-center">Publicidad</p>
+            </div>
+            <div class="row">
+              <img src="Imagenes/usuario.jpg" class="col-lg-12 px-0 mb-3">
+            </div>
+            <div class="row">
+              <img src="Imagenes/usuario3.jpg" class="col-lg-12 px-0 mb-3">
+            </div>
+            <div class="row">
+              <img src="Imagenes/usuario4.jpg" class="col-lg-12 px-0 mb-3">
+            </div>
+            <div class="row justify-content-between">
+              <p class="text-primary">Privacidad</p>
+              <p class="text-primary">Condiciones</p>
+              <p class="text-primary">publicidad</p>
+            </div>
+            <div class="row">
+              <p class="col-lg-12 text-secondary px-0 ">Red Social &#169; 2018</p>
+            </div>
+          </aside>
+        </div>
+      </div>
 </body>
 </html>

@@ -1,0 +1,17 @@
+li{
+    list-style: none;
+}
+a, span{
+    text-decoration: none;
+}
+li:hover{
+    background-color: gray;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}
+.imagen{
+    width: 100%;
+    height: 400px;
+}
