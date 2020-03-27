@@ -1,0 +1,18 @@
+$theme: "Dark"; 
+
+@if $theme == "Dark" { 
+    $text-color: #ffffff; 
+    $body-background-color: #22222a; 
+    $theme-color: #42424a; 
+    $secondary-color: #c24721; 
+    $ternary-color: #698932; $link-color: 
+    $secondary-color; 
+    $menu-item-color: white; } 
+@else if $theme == "Light" { 
+    $text-color: #000; 
+    $body-background-color: #fff; 
+    $theme-color: #372a27; 
+    $secondary-color: #d26741; 
+    $ternary-color: #b9da63; 
+    $link-color: $secondary-color; 
+    $menu-item-color: white; }

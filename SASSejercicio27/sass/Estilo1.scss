@@ -1,0 +1,378 @@
+@import "variables","botones","secciones";
+
+@mixin margin-padding($tamanio) {
+    @warn "el tamanio debe de estar en pixeles";
+    $porcentajes: 1 1,1.5 2,2 3,2.5 4,3 5;
+
+    @each $porcentaje, $numero in $porcentajes {
+      .my-#{$numero} {
+        margin-top: $tamanio*$porcentaje;
+        margin-bottom: $tamanio*$porcentaje;
+      }
+      .py-#{$numero} {
+        padding-top: $tamanio*$porcentaje;
+        padding-bottom: $tamanio*$porcentaje;
+      }
+    }
+}
+html{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-size: $fuente-principal-tamanio;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(../Imagenes/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    font-size: $fuente-encabezado-tamanio;
+    font-family: 'Lobster', cursive;
+    .empresa{
+        width: 50%;
+        height: 25%;
+        padding: 1%;
+        box-sizing: border-box;
+        img{
+            width: 30%;
+            height: 100%;
+        }
+    }
+    .navegador1{
+        width: 50%;
+        height: 25%;
+        padding: 1%;
+        
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        display: flex;
+    
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        box-sizing: border-box;
+        ul{
+            width: 100%;
+            height: 20%;
+            li{
+                display: inline;
+                margin: 1%;
+                a{
+                    text-decoration: none;
+                    color: $color-fuente;
+                }
+            }
+        }
+    }
+    .presentacion{
+        width: 50%;
+        height: 20%;
+        padding: 0.5%;
+    
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        display: flex;
+    
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        box-sizing: border-box;
+    
+        color:  $color-fuente;
+        .parrafos{
+            width: 40%;
+            height: 100%;
+            margin: 1%;
+        }
+    }
+}
+
+
+
+
+
+
+
+ /*Final de la seccion principal*/
+
+
+
+
+
+/*Final seccion de boton*/
+
+.s2{
+    width: 100%;
+    height: 60vh;
+    padding-left: 7%;
+    background-image: url(../Imagenes/Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    .texto h5{
+        font-family: 'Lobster', cursive;
+        font-size: $fuente-titulo-1;
+        color:  $color-fuente;
+    }
+    .texto p{
+        font-family: 'Heebo', sans-serif;
+        font-size: $fuente-titulo-2;
+        color:  $color-fuente;
+    }
+    a{
+        width: 12%;
+        height: 10%;
+        color:  $color-fuente;
+        text-decoration: none;
+        text-align: center;
+    
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        display: flex;
+    
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        box-sizing: border-box;
+
+    }
+}
+
+
+
+
+
+/*Final de la seccion 2*/
+
+.s3{
+    width: 100%;
+    height: 40hw;
+    padding: 1%;
+    font-family: 'Heebo', sans-serif;
+    
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    .blog{
+        width: 50%;
+        height: 100vh;
+        margin: 1%;
+        font-size: 1vw;
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        display: flex;
+    
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        box-sizing: border-box;
+        h6{
+            font-family: 'Lobster', cursive;
+            font-size: 2vw;
+        }
+        img{
+            width: 70%;
+            height: 100%;
+            border-radius: 7px;
+        }
+    }
+    .articulo1{
+        width: 100%;
+        height: 100%;
+    
+        padding: 1%;
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        display: flex;
+    
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .imgblog{
+        width:90%;
+        height: 80%;
+    }
+    .textblog{
+        width:100%;
+        height: 50%;
+        padding: 1%;
+        box-sizing: border-box;
+        text-align: justify;
+        h3::after{
+            @extend %heading;
+            content: '';
+            display: block;
+            width: 150px;
+            height: 5px;
+            background-color: $color-boton1;
+        }
+        p em{
+            color: $color-boton2;
+        }
+    }
+    .testimoniales{
+        width: 50%;
+        height: 100vh;
+        margin: 1%;
+        padding-top: 0.4%;
+        padding-bottom: 7%;
+        font-size: 1vw;
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        display: flex;
+    
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        box-sizing: border-box;
+        h6{
+            font-family: 'Lobster', cursive;
+            font-size: 2vw;
+        }
+        .testi{
+            width: 70%;
+            height: 60%;
+            padding: 8%;
+            background-color:$color-boton2; 
+        
+            border-radius: 5px;
+            font-size: 1.5vw;
+            color: $color-fuente;
+            display:-webkit-flex;
+            display:-ms-flexbox;
+            display: flex;
+        
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            box-sizing: border-box;
+            text-align: justify;
+        }
+    }
+}
+
+/*Final de la seccion 3*/
+
+footer{
+    width: 100%;
+    height: 40hw;
+    padding: 1.1%;
+    background-color: rgb(49, 47, 47);
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1vw;
+    color: $color-fuente;
+    nav{
+        width: 50%;
+        height: 50%;
+        font-family: 'Lobster', cursive;
+        ul li{
+            display: inline;
+            margin: 1%;
+            a{
+                text-decoration: none;
+                color: $color-fuente;
+            }
+        }
+    }
+    address{
+        font-family: 'Heebo', sans-serif;
+    }
+}
+
+
+
+
+
+/*Pseudoclases enlaces*/
+
+a:link{
+    color: $color-fuente;
+}
+a:visited{
+    color: $color-fuente;
+}
+a:hover{
+    color:blue;
+}
+a:active{
+    color: grey;
+}
+
+/*Cambiar la primera letra de cada parrafo*/
+
+p::first-letter{
+    font-size: 2.5vh;
+    color: $color-boton1;
+}
+
+/*Añadir comillas antes del parrafo*/
+
+.testimoniales .testi p::before{
+    content: "“";
+    display: inline;
+    font-size: 5vh;
+}
+
+/*Cambiar el estilo del texto seleccionado por el propio usuario*/
+
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, br::selection{
+    color: yellow;
+    background-color: purple;
+}
+
+
+
