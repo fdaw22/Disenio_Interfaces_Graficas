@@ -1,0 +1,109 @@
+@import "variables";
+
+%heading{
+    width: 21%;
+    height: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+h2{
+    @extend %heading;
+}
+.s1{
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    padding: 1%;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    .caracteristicas{
+        width: 50%;
+        height: 80%;
+        margin: 1%;
+        padding: 1%;
+        font-size: $fuente-titulo-2;
+        text-align: center;
+        box-sizing: border-box;
+        img{
+            width: 20%;
+            height: 20%;
+        }
+        h3{
+            @extend %heading;
+            font-family: 'Lobster', cursive;
+            font-size: $fuente-titulo-2;
+        }
+        p{
+            font-family: 'Heebo', sans-serif;
+            font-size: $fuente-parrafos;
+        }
+    }
+}
+
+
+
+
+
+/*Fin de la seccion 1*/
+main{
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 1%;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+    .articulo{
+        width: 20%;
+        height: 96%;
+        min-height: 50px;
+        margin: 0.5%;
+        padding-bottom: 2%;
+        background-image: linear-gradient(to bottom right,black, white);
+        border-radius: 5px;
+        box-sizing: border-box;
+        img{
+            width: 100%;
+            height: 40%;
+        }
+        .informacion{
+            width: 100%;
+            height: 30%;
+            margin-bottom: 3%;
+            padding: 4%;
+            text-align: justify;
+            font-size: $fuente-titulo-2;
+            font-family: 'Heebo', sans-serif;
+            box-sizing: border-box;
+            em{
+                color: $color-boton2;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        font-family: 'Heebo', sans-serif;
+        color:  $color-fuente;
+        font-size:$fuente-parrafos;
+    }
+}
+
+main .articulo .informacion del em{
+    color: $color-boton1;
+}

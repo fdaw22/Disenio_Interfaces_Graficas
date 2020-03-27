@@ -1,0 +1,85 @@
+@mixin tamanio-titulo($size) {
+    font-size: $size - ( $size * 0.1 );
+}
+
+h1{
+    @include tamanio-titulo(100px);
+}
+
+h2{
+    @include tamanio-titulo(20%);
+}
+
+//tamanio de los diferentes divs//
+
+$seed: 369;
+
+@mixin caja($max) {
+
+    $seed: ($seed * 9301 + 49297) % 233280 !global;
+    height:($seed / 233280) * $max ;
+    width: ($seed / 3242345) * $max;
+}
+
+//color aleatorio cajas//
+
+@mixin random-bgr(){
+    background: rgb(random(255), random(255), random(255));
+}
+
+.div-1{
+    @include caja(234px);
+    @include random-bgr();
+}
+
+.div-2{
+    @include caja(23%);
+    @include random-bgr();
+}
+
+.div-2{
+    @include caja(23%);
+    @include random-bgr();
+}
+
+.div-3{
+    @include caja(2432px);
+    @include random-bgr();
+}
+
+.div-4{
+    @include caja(12%);
+    @include random-bgr();
+}
+
+.div-5{
+    @include caja(0.89%);
+    @include random-bgr();
+}
+
+.div-6{
+    @include caja(34%);
+    @include random-bgr();
+}
+
+.div-7{
+    @include caja(24%);
+    @include random-bgr();
+}
+
+.div-8{
+    @include caja(23px);
+    @include random-bgr();
+}
+
+.div-9{
+    @include caja(278px);
+    @include random-bgr();
+}
+
+.div-10{
+    @include caja(78%);
+    @include random-bgr();
+}
+
+
