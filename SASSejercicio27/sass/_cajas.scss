@@ -1,0 +1,50 @@
+
+h2{
+    width: 21%;
+    height: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $tamanio-fuente4;
+    text-align: center;
+    font-family: fuente1;
+}
+.s1{
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    padding: 1%;
+
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    .caracteristicas{
+        width: 50%;
+        height: 80%;
+        margin: 1%;
+        padding: 1%;
+        font-size: $tamanio-fuente2;
+        text-align: center;
+        box-sizing: border-box;
+        img{
+            width: 20%;
+            height: 20%;
+        }
+        h3{
+            font-family: $fuente1;
+            font-size: $tamanio-fuente2
+        }
+        p{
+            font-family: $fuente2;
+            font-size: $tamanio-fuente1;
+        }
+    }
+    &::hover{
+        background-color: invert($color-botones1);
+        color: invert(blue);
+    }
+}
