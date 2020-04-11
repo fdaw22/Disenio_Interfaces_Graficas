@@ -1,4 +1,46 @@
 @charset "UTF-8";
+h2 {
+  width: 21%;
+  height: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.7vw;
+  text-align: center;
+  font-family: fuente1; }
+
+.s1 {
+  width: 100%;
+  height: 40vh;
+  margin: 0;
+  padding: 1%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  box-sizing: border-box; }
+  .s1 .caracteristicas {
+    width: 50%;
+    height: 80%;
+    margin: 1%;
+    padding: 1%;
+    font-size: 2.5vw;
+    text-align: center;
+    box-sizing: border-box; }
+    .s1 .caracteristicas img {
+      width: 20%;
+      height: 20%; }
+    .s1 .caracteristicas h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2.5vw; }
+    .s1 .caracteristicas p {
+      font-family: "Heebo", sans-serif;
+      font-size: 2vw; }
+  .s1::hover {
+    background-color: #d29c7c;
+    color: yellow; }
+
 .boton1 {
   width: 70%;
   height: 10%;
@@ -13,9 +55,11 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  background-color: orangered;
+  background-color: #693636;
   border-radius: 5px;
   border: black 2px solid; }
+  .boton1:hover {
+    background-color: #d29c7c; }
 
 .boton2 {
   width: 100%;
@@ -40,10 +84,10 @@
       width: 100%;
       height: 100%;
       margin: 0;
-      background-color: green;
+      background-color: #2d6383;
       border-radius: 5px;
-      font-family: 'Heebo', sans-serif;
-      font-size: 1vw;
+      font-family: "Heebo", sans-serif;
+      font-size: 2vw;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
@@ -53,15 +97,17 @@
       align-items: center;
       align-content: center;
       box-sizing: border-box; }
+  .boton2:hover {
+    background-color: #96c9c9; }
 
 .boton3 {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: orangered;
+  background-color: #693636;
   border-radius: 5px;
-  font-family: 'Heebo', sans-serif;
-  font-size: 1vw;
+  font-family: "Heebo", sans-serif;
+  font-size: 2.5vw;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -71,107 +117,66 @@
   align-items: center;
   align-content: center;
   box-sizing: border-box; }
+  .boton3:hover {
+    background-color: #96c9c9; }
 
-h2, .s1 .caracteristicas h3, .s3 .textblog h3::after {
-  width: 21%;
-  height: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 2.5vw;
-  text-align: center;
-  font-family: 'Lobster', cursive; }
-
-.s1 {
+html, body, header {
   width: 100%;
-  height: 40vh;
-  margin: 0;
-  padding: 1%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  box-sizing: border-box; }
-  .s1 .caracteristicas {
-    width: 50%;
-    height: 80%;
-    margin: 1%;
-    padding: 1%;
-    font-size: 1.5vw;
-    text-align: center;
-    box-sizing: border-box; }
-    .s1 .caracteristicas img {
-      width: 20%;
-      height: 20%; }
-    .s1 .caracteristicas h3 {
-      font-family: 'Lobster', cursive;
-      font-size: 1.5vw; }
-    .s1 .caracteristicas p {
-      font-family: 'Heebo', sans-serif;
-      font-size: 1vw; }
+  height: 100vh; }
 
-/*Fin de la seccion 1*/
-main {
-  width: 100%;
-  height: 80vh;
+header {
   margin: 0;
-  padding: 1%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  box-sizing: border-box; }
-  main .articulo {
-    width: 20%;
-    height: 96%;
-    min-height: 50px;
-    margin: 0.5%;
-    padding-bottom: 2%;
-    background-image: linear-gradient(to bottom right, black, white);
-    border-radius: 5px;
-    box-sizing: border-box; }
-    main .articulo img {
-      width: 100%;
-      height: 40%; }
-    main .articulo .informacion {
-      width: 100%;
-      height: 30%;
-      margin-bottom: 3%;
-      padding: 4%;
-      text-align: justify;
-      font-size: 1.5vw;
-      font-family: 'Heebo', sans-serif;
-      box-sizing: border-box; }
-      main .articulo .informacion em {
-        color: green; }
-  main a {
-    text-decoration: none;
-    font-family: 'Heebo', sans-serif;
-    color: white;
-    font-size: 1vw; }
+  padding: 0; }
 
-main .articulo .informacion del em {
-  color: orangered; }
+.my-1 {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.py-1 {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.my-2 {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.py-2 {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.my-3 {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.py-3 {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.my-4 {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.py-4 {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.my-5 {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.py-5 {
+  padding-top: 60px;
+  padding-bottom: 60px; }
 
 html {
-  width: 100%;
-  height: 100vh;
   margin: 0;
   font-size: 62.5%; }
 
 body {
-  width: 100%;
-  height: 100vh;
   margin: 0; }
 
 header {
-  width: 100%;
-  height: 100vh;
   min-height: 100vh;
-  margin: 0;
   background-image: url(../Imagenes/Fondo1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -182,8 +187,8 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  font-size: 1.7vw;
-  font-family: 'Lobster', cursive; }
+  font-size: 2.7vw;
+  font-family: Arial, Helvetica, sans-serif; }
   header .empresa {
     width: 50%;
     height: 25%;
@@ -229,6 +234,51 @@ header {
       height: 100%;
       margin: 1%; }
 
+/*Final de cabecera*/
+/*Fin de la seccion 1*/
+main {
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  padding: 1%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  box-sizing: border-box; }
+  main .articulo {
+    width: 20%;
+    height: 96%;
+    min-height: 50px;
+    margin: 0.5%;
+    padding-bottom: 2%;
+    background-image: linear-gradient(to bottom right, black, white);
+    border-radius: 5px;
+    box-sizing: border-box; }
+  main img {
+    width: 100%;
+    height: 40%; }
+  main .informacion {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 3%;
+    padding: 4%;
+    text-align: justify;
+    font-size: 1.2vw;
+    font-family: "Heebo", sans-serif;
+    box-sizing: border-box; }
+    main .informacion em {
+      color: #2d6383; }
+    main .informacion del em {
+      color: #693636; }
+  main a {
+    text-decoration: none;
+    font-family: "Heebo", sans-serif;
+    color: white;
+    font-size: 2vw; }
+
 /*Final de la seccion principal*/
 /*Final seccion de boton*/
 .s2 {
@@ -247,12 +297,12 @@ header {
   align-items: flex-start;
   box-sizing: border-box; }
   .s2 .texto h5 {
-    font-family: 'Lobster', cursive;
-    font-size: 2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4px;
     color: white; }
   .s2 .texto p {
-    font-family: 'Heebo', sans-serif;
-    font-size: 1.5vw;
+    font-family: "Heebo", sans-serif;
+    font-size: 1.2vw;
     color: white; }
   .s2 a {
     width: 12%;
@@ -275,7 +325,7 @@ header {
   width: 100%;
   height: 40hw;
   padding: 1%;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +337,7 @@ header {
     width: 50%;
     height: 100vh;
     margin: 1%;
-    font-size: 1vw;
+    font-size: 2vw;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -298,8 +348,8 @@ header {
     align-content: center;
     box-sizing: border-box; }
     .s3 .blog h6 {
-      font-family: 'Lobster', cursive;
-      font-size: 2vw; }
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 3.5vw; }
     .s3 .blog img {
       width: 70%;
       height: 100%;
@@ -331,16 +381,16 @@ header {
       display: block;
       width: 150px;
       height: 5px;
-      background-color: orangered; }
+      background-color: #693636; }
     .s3 .textblog p em {
-      color: green; }
+      color: #2d6383; }
   .s3 .testimoniales {
     width: 50%;
     height: 100vh;
     margin: 1%;
     padding-top: 0.4%;
     padding-bottom: 7%;
-    font-size: 1vw;
+    font-size: 2vw;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -351,15 +401,15 @@ header {
     align-content: center;
     box-sizing: border-box; }
     .s3 .testimoniales h6 {
-      font-family: 'Lobster', cursive;
-      font-size: 2vw; }
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 3.5vw; }
     .s3 .testimoniales .testi {
       width: 70%;
       height: 60%;
       padding: 8%;
-      background-color: green;
+      background-color: #2d6383;
       border-radius: 5px;
-      font-size: 1.5vw;
+      font-size: 2.5vw;
       color: white;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -371,6 +421,10 @@ header {
       align-content: center;
       box-sizing: border-box;
       text-align: justify; }
+      .s3 .testimoniales .testi p::before {
+        content: "\ÔÇ£";
+        display: inline;
+        font-size: 5vh; }
 
 /*Final de la seccion 3*/
 footer {
@@ -387,20 +441,25 @@ footer {
   align-content: center;
   align-items: center;
   box-sizing: border-box;
-  font-size: 1vw;
+  font-size: 2vw;
   color: white; }
   footer nav {
     width: 50%;
     height: 50%;
-    font-family: 'Lobster', cursive; }
+    font-family: Arial, Helvetica, sans-serif; }
     footer nav ul li {
       display: inline;
       margin: 1%; }
-      footer nav ul li a {
-        text-decoration: none;
-        color: white; }
+    footer nav a {
+      text-decoration: none;
+      color: white; }
   footer address {
-    font-family: 'Heebo', sans-serif; }
+    font-family: "Heebo", sans-serif; }
+    footer address:hover {
+      background-color: #d29c7c;
+      color: blue; }
+  footer:hover {
+    background-color: #d29c7c; }
 
 /*Pseudoclases enlaces*/
 a:link {
@@ -417,18 +476,13 @@ a:active {
 
 /*Cambiar la primera letra de cada parrafo*/
 p::first-letter {
-  font-size: 2.5vh;
-  color: orangered; }
+  font-size: 3.5vw;
+  color: tomato; }
 
 /*A├▒adir comillas antes del parrafo*/
-.testimoniales .testi p::before {
-  content: "ÔÇ£";
-  display: inline;
-  font-size: 5vh; }
-
 /*Cambiar el estilo del texto seleccionado por el propio usuario*/
 p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, br::selection {
   color: yellow;
   background-color: purple; }
 
-/*# sourceMappingURL=Estilo1.css.map */
+/*# sourceMappingURL=ej1.css.map */

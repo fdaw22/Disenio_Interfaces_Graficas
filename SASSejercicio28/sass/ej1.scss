@@ -1,40 +1,49 @@
-@import "variables","botones","secciones","temas";
-
-@mixin margin-padding($tamanio) {
-    @warn "el tamanio debe de estar en pixeles";
-    $porcentajes: 1 1,1.5 2,2 3,2.5 4,3 5;
-
-    @each $porcentaje, $numero in $porcentajes {
-      .my-#{$numero} {
-        margin-top: $tamanio*$porcentaje;
-        margin-bottom: $tamanio*$porcentaje;
-      }
-      .py-#{$numero} {
-        padding-top: $tamanio*$porcentaje;
-        padding-bottom: $tamanio*$porcentaje;
-      }
+@import 'themes','cajas','botones';
+%completo-100{
+    width: 100%;
+    height: 100vh;
+}
+%sin-huecos{
+    margin: 0;
+    padding: 0;
+}
+@mixin size($size) {
+    @if unit($size) != 'px'{
+        @warn "la unidad debe de ser en pixeles";
+    }@else{
+        font-size: 2*$size;
     }
 }
+@mixin bootstrap($tamanio){
+    $escala:1;
+    @for $i from 1 through 5{
+        .my-#{$i}{
+            margin-top: $tamanio*$escala;
+            margin-bottom: $tamanio*$escala;
+        }
+        .py-#{$i}{
+            padding-top: $tamanio*$escala;
+            padding-bottom: $tamanio*$escala;
+        }
+        $escala:$escala+0.5;
+    }
+}
+@include bootstrap(20px);
 html{
-    width: 100%;
-    height: 100vh;
+    @extend %completo-100;
     margin: 0;
-    font-size: $fuente-principal-tamanio;
-    color: $text-color;
+    font-size: 62.5%; 
 }
 body{
-    width: 100%;
-    height: 100vh;
+    @extend %completo-100;
     margin: 0;
-    background-color:  $body-background-color;
 }
 header{
-    width: 100%;
-    height: 100vh;
+    @extend %completo-100;
+    @extend %sin-huecos;
     min-height: 100vh;
-    margin: 0;
-    //background-image: url(../Imagenes/Fondo1.jpg);
-    background-color: $theme-color;
+
+    background-image: url(../Imagenes/Fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -46,8 +55,8 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    font-size: $fuente-encabezado-tamanio;
-    font-family: 'Lobster', cursive;
+    font-size: $tamanio-fuente3;
+    font-family: $fuente1;
     .empresa{
         width: 50%;
         height: 25%;
@@ -79,7 +88,7 @@ header{
                 margin: 1%;
                 a{
                     text-decoration: none;
-                    color: $color-fuente;
+                    color: white;
                 }
             }
         }
@@ -98,24 +107,74 @@ header{
         justify-content: center;
         box-sizing: border-box;
     
-        color:  $color-fuente;
+        color: white;
         .parrafos{
             width: 40%;
             height: 100%;
             margin: 1%;
+        
         }
     }
 }
 
+/*Final de cabecera*/
 
 
+/*Fin de la seccion 1*/
+main{
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 1%;
 
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display: flex;
 
-
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+    .articulo{
+        width: 20%;
+        height: 96%;
+        min-height: 50px;
+        margin: 0.5%;
+        padding-bottom: 2%;
+        background-image: linear-gradient(to bottom right,black, white);
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    img{
+        width: 100%;
+        height: 40%;
+    }
+    .informacion{
+        width: 100%;
+        height: 30%;
+        margin-bottom: 3%;
+        padding: 4%;
+        text-align: justify;
+        font-size: 1.2vw;
+        font-family: $fuente2;
+        box-sizing: border-box;
+        em{
+            color: $color-botones1;
+        }
+        del em{
+            color: $color-botones2;
+        }
+    }
+    
+    a{
+        text-decoration: none;
+        font-family: $fuente2;
+        color: white;
+        font-size: $tamanio-fuente1;
+    }
+}
 
  /*Final de la seccion principal*/
-
-
 
 
 
@@ -125,8 +184,7 @@ header{
     width: 100%;
     height: 60vh;
     padding-left: 7%;
-    //background-image: url(../Imagenes/Fondo2.jpg);
-    background-color: $secondary-color;
+    background-image: url(../Imagenes/Fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -140,19 +198,19 @@ header{
     align-items: flex-start;
     box-sizing: border-box;
     .texto h5{
-        font-family: 'Lobster', cursive;
-        font-size: $fuente-titulo-1;
-        color:  $color-fuente;
+        font-family: $fuente1;
+        @include size(2px);
+        color: white;
     }
     .texto p{
-        font-family: 'Heebo', sans-serif;
-        font-size: $fuente-titulo-2;
-        color:  $color-fuente;
+        font-family: $fuente2;
+        font-size: 1.2vw;
+        color: white;
     }
     a{
         width: 12%;
         height: 10%;
-        color:  $color-fuente;
+        color: white;
         text-decoration: none;
         text-align: center;
     
@@ -170,17 +228,13 @@ header{
     }
 }
 
-
-
-
-
 /*Final de la seccion 2*/
 
 .s3{
     width: 100%;
     height: 40hw;
     padding: 1%;
-    font-family: 'Heebo', sans-serif;
+    font-family: $fuente2;
     
     display:-webkit-flex;
     display:-ms-flexbox;
@@ -195,7 +249,7 @@ header{
         width: 50%;
         height: 100vh;
         margin: 1%;
-        font-size: 1vw;
+        font-size: $tamanio-fuente1;
         display:-webkit-flex;
         display:-ms-flexbox;
         display: flex;
@@ -207,8 +261,8 @@ header{
         align-content: center;
         box-sizing: border-box;
         h6{
-            font-family: 'Lobster', cursive;
-            font-size: 2vw;
+            font-family: $fuente1;
+            font-size: $tamanio-fuente4;
         }
         img{
             width: 70%;
@@ -243,15 +297,14 @@ header{
         box-sizing: border-box;
         text-align: justify;
         h3::after{
-            @extend %heading;
             content: '';
             display: block;
             width: 150px;
             height: 5px;
-            background-color: $color-boton1;
+            background-color: $color-botones2;
         }
         p em{
-            color: $color-boton2;
+            color: $color-botones1;
         }
     }
     .testimoniales{
@@ -260,7 +313,7 @@ header{
         margin: 1%;
         padding-top: 0.4%;
         padding-bottom: 7%;
-        font-size: 1vw;
+        font-size: $tamanio-fuente1;
         display:-webkit-flex;
         display:-ms-flexbox;
         display: flex;
@@ -272,18 +325,18 @@ header{
         align-content: center;
         box-sizing: border-box;
         h6{
-            font-family: 'Lobster', cursive;
-            font-size: 2vw;
+            font-family: $fuente1;
+            font-size: $tamanio-fuente4;
         }
         .testi{
             width: 70%;
             height: 60%;
             padding: 8%;
-            background-color:$color-boton2; 
+            background-color:$color-botones1;
         
             border-radius: 5px;
-            font-size: 1.5vw;
-            color: $color-fuente;
+            font-size: $tamanio-fuente2;
+            color: white;
             display:-webkit-flex;
             display:-ms-flexbox;
             display: flex;
@@ -295,6 +348,11 @@ header{
             align-content: center;
             box-sizing: border-box;
             text-align: justify;
+            p::before{
+                content: "\“";
+                display: inline;
+                font-size: 5vh;
+            }            
         }
     }
 }
@@ -317,37 +375,40 @@ footer{
     align-content: center;
     align-items: center;
     box-sizing: border-box;
-    font-size: 1vw;
-    color: $color-fuente;
+    font-size: $tamanio-fuente1;
+    color: white;
     nav{
         width: 50%;
         height: 50%;
-        font-family: 'Lobster', cursive;
+        font-family: $fuente1; 
         ul li{
             display: inline;
             margin: 1%;
-            a{
-                text-decoration: none;
-                color: $color-fuente;
-            }
+        }
+        a{
+            text-decoration: none;
+            color: white;
         }
     }
     address{
-        font-family: 'Heebo', sans-serif;
+        font-family: $fuente2;
+        &:hover{
+            background-color: invert($color-botones1);
+            color: blue;
+        }
+    }
+    &:hover{
+        background-color: invert($color-botones1);
     }
 }
-
-
-
-
 
 /*Pseudoclases enlaces*/
 
 a:link{
-    color: $color-fuente;
+    color: white;
 }
 a:visited{
-    color: $color-fuente;
+    color: white;
 }
 a:hover{
     color:blue;
@@ -359,17 +420,12 @@ a:active{
 /*Cambiar la primera letra de cada parrafo*/
 
 p::first-letter{
-    font-size: 2.5vh;
-    color: $color-boton1;
+    font-size: $tamanio-fuente4;
+    color: tomato;
 }
 
 /*Añadir comillas antes del parrafo*/
 
-.testimoniales .testi p::before{
-    content: "“";
-    display: inline;
-    font-size: 5vh;
-}
 
 /*Cambiar el estilo del texto seleccionado por el propio usuario*/
 

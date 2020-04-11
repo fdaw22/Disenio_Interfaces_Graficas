@@ -1,0 +1,21 @@
+// === THEME === 
+// Dark, Light 
+$theme: Dark; 
+@if $theme == Dark { 
+    $fuente1: Arial, Helvetica, sans-serif !default !global;
+    $fuente2:'Heebo', sans-serif !default !global;
+    $tamanio-fuente1:2vw !global;
+    $tamanio-fuente2:2.5vw !global;
+    $tamanio-fuente3:2.7vw !global;
+    $tamanio-fuente4:3.5vw !global;
+    $color-botones1:rgb(45, 99, 131) !global;
+    $color-botones2:rgb(105, 54, 54) !global;} 
+@else if $theme == Light { 
+    $fuente1:'Lobster', cursive !default !global;
+    $fuente2:'Heebo', sans-serif !default !global;
+    $tamanio-fuente1:1vw !global;
+    $tamanio-fuente2:1.5vw !global;
+    $tamanio-fuente3:1.7vw !global;
+    $tamanio-fuente4:2.5vw !global;
+    $color-botones1:rgb(82, 126, 82) !global;
+    $color-botones2:rgb(184, 75, 75) !global;}
